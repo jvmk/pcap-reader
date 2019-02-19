@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.varmarken'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // pcap4j
+    implementation 'org.pcap4j:pcap4j-core:2.0.0-alpha.2'
+    implementation 'org.pcap4j:pcap4j-packetfactory-static:2.0.0-alpha.2'
+    // pcap4j logging dependencies
+    implementation 'org.slf4j:slf4j-api:1.7.25'
+    implementation 'org.slf4j:slf4j-simple:1.7.25'
+}
